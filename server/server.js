@@ -19,6 +19,6 @@ app.get("/api/movies", (req, res) => {
   res.json(movies);
 });
 
-const server = app.listen(process.env.port || 3000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`Listening on${server.address().port}`);
 });
