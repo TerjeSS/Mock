@@ -1,6 +1,9 @@
 {
   "name": "mock",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +15,7 @@
     "format:check": "prettier --check **/*.{js,jsx}",
     "build": "npm run build:server && npm run build:client",
     "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build",
-    "prepare" : "husky install"
+    "build:server": "cd server && npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,6 @@
   "homepage": "https://github.com/TerjeSS/Mock#readme",
   "dependencies": {
     "concurrently": "^7.1.0",
-    "husky": "^7.0.4",
     "prettier": "^2.6.2"
   }
 }
