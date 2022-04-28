@@ -1,15 +1,12 @@
 import useLoading from "../Components/useLoading";
-import fetchJSON from "../Components/fetchJSON";
 
-export default function Movies() {
-  const { loading, data, error } = useLoading(async () =>
-    fetchJSON("/api/movies")
-  );
+export default function Movies({ listMovies }) {
+  const { loading, data, error } = useLoading(listMovies);
   if (loading) {
     return <div>Loading.....</div>;
   }
   if (error) {
-    return <div>{error}</div>;
+    return <div>{error.toString()}</div>;
   }
   return (
     <div>

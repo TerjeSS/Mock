@@ -1,3 +1,5 @@
 node_modules/
 .idea/
 *.iml
+/client/.parcel-cache/
+/client/dist/
