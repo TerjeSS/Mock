@@ -3,3 +3,5 @@ node_modules/
 *.iml
 /client/.parcel-cache/
 /client/dist/
+coverage/
+/server/.env
